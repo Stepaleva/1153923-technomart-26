@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
-* Студент: [Мария Львова](https://up.htmlacademy.ru/htmlcss/26/user/1153923).
-* Наставник: `Неизвестно`.
+* Студент: [Мария Степанова](https://up.htmlacademy.ru/htmlcss/26/user/1153923).
+* Наставник: [Тимур Карагулов](https://htmlacademy.ru/profile/id1111507).
 
 ---
 
