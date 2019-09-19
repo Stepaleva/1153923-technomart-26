@@ -10,8 +10,12 @@
   	 <div>
   	 	 <a href="index.html"><img src="img/logo-technomart.svg" width="150" height="40" alt="Логотип Техномарта"></a>
        <div>
-        <img src="img/icon-search.svg" alt="поиск">
-  	 	  <!--здесь будет форма-->
+
+        <form>
+          <img src="img/icon-search.svg" alt="поиск">
+          <label for="search"></label>
+          <input type="search" id="search" name="search" placeholder="Поиск:">
+        </form>
        </div>
        <div>
         <img src="img/icon-bookmark.svg" alt="закладки">
@@ -46,12 +50,12 @@
   	 		<a href="#login">Войти</a>
         </div>
   	 		<a href="#registration">Регистрация</a>
-  	 	
+
   	 </div>
   	 <nav>
 
   	    <ul>
-  	 		<li><a href="index.html"><img src="img/icon-home.svg" alt="главная"></a></li>
+  	 		<li><a href="index.html">Главная</a></li>
   	 		<li><a href="#">Компания</a></li>
   	 		<li><a href="catalog.html">Каталог</a> </li>
   	 		<li><a href="#">Магазин</a></li>
@@ -64,7 +68,7 @@
     <main>
 
       <ul>
-        <li><a href="#"></a></li>
+        <li><a href="#"><img src="img/icon-home.svg" alt="главная"></a></li>
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Инструмент</a></li>
         <li><a href="">Перфораторы</a></li>
@@ -78,15 +82,57 @@
         </div>
         <div>
            <h3>Цена:</h3>
-           <!--место для фильтра цены-->
+           <form>
+             <div>
+                <input type="range" min="0" max="30000" name="price">
+             </div>
+                <input type="text" name="min" value="0">
+                 -
+                <input type="text" name="max" value="30000">
+           </form>
         </div>
         <div>
           <h3>Производители:</h3>
-          <!--место для списка производитлей-->
+          <form>
+            <ul>
+              <li>
+                <input type="checkbox" name="bosch" id="bosch" checked>
+                <label for="bosch">BOSCH</label>
+              </li>
+              <li>
+                <input type="checkbox" name="interskol" id="interskol" >
+                <label for="interskol">Интерскол</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Makita" id="Makita" checked>
+                <label for="Makita">Makita</label>
+              </li>
+              <li>
+                <input type="checkbox" name="DeWalt" id="DeWalt">
+                <label for="DeWalt">Dewalt</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Hitachi" id="Hitachi">
+                <label for="Hitachi">Hitachi</label>
+              </li>
+            </ul>
+
+          </form>
         </div>
         <div>
           <h3>Питание:</h3>
-          <!--место для типов питаний -->
+          <form>
+            <ul>
+              <li>
+                <input type="radio" name="battery" id="battery" checked>
+                <label for="battery">Аккумуляторные</label>
+              </li>
+              <li>
+                <input type="radio" name="net" id="net">
+                <label for="net">Сетевые</label>
+              </li>
+            </ul>
+          </form>
         </div>
       <button type="submit">Показать</button>
       </section>
@@ -287,7 +333,7 @@
   	</main>
     <footer>
       <section>
-         <h2>Нижний тачбар</h2>
+         <h2 class="visually-hidden">Нижний тачбар</h2>
        <a href="index.html"><img src="img/logo-technomart.svg" width="150" height="40" alt="Логотип Техномарта"></a>
        <ul>
         <li><a href="">Компания</a></li>
@@ -299,7 +345,7 @@
 
       </section>
       <section>
-        <h2>Адрес и меню</h2>
+        <h2 class="visually-hidden">Адрес и меню</h2>
         <div>
                 <div>
                  <p>
