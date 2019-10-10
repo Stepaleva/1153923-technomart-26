@@ -1,3 +1,405 @@
+body{
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  color: #000000;
+
+  
+  background-image: url("images/white background.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 18px;
+  color:#ffffff;
+  background-color:#293449;
+  position: relative;
+  
+}
+.main-navigation ul{
+  list-style:none;
+
+}
+.burger-of-pages ul{
+  list-style:none;
+}
+.filter-of-firms ul{
+  list-style:none;
+}
+.filter-of-battery ul{
+   list-style:none;
+}
+.sorting ul{
+   list-style:none;
+}
+.main-navigation a{
+
+  color: #ffffff;
+}
+.main-navigation li{
+  float:left;
+  margin-right: 66px;
+}
+.main-navigation a:hover,
+.main-navigation a:focus,
+.footer-navigation a:hover,
+.footer-navigation a:focus,
+.footer-navigation-otherness a:hover,
+.footer-navigation-otherness a:focus{
+  background-color: #242424;
+}
+.header-up{
+  min-height:47px;
+  color:#ffffff;
+  background-color:#293449;
+
+}
+.header-up-box{
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.logo{
+  float: left;
+  position: absolute;
+  left: 185px;
+  top: 13px;
+  width: 120px;
+  height: 19px;
+}
+
+.header-up-box{
+  float: left;
+}
+.search{
+  text-align: left;
+  float: left;
+  color:#ffffff;
+  position: absolute;
+  left: 399px;
+  top: 14px;
+  width: 200px;
+  height: 15px;
+}
+
+.bookmarks{
+  text-align: left;
+  float: left;
+  color:#ffffff;
+   position: absolute;
+  left: 664px;
+  top: 14px;
+  width: 140px;
+  height: 15px;
+}
+.header-up-box a{
+  color: #ffffff;
+}
+.basket{
+  text-align: left;
+  float: left;
+  color:#ffffff;
+  position: absolute;
+  left: 820px;
+  top: 14px;
+  width: 140px;
+  height: 15px;
+}
+.ordering{
+  text-align: left;
+  float: left;
+  color:#ffffff;
+   position: absolute;
+  left: 940px;
+  top: 14px;
+  width: 150px;
+  height: 15px;
+}
+
+.container{ 
+  position: absolute;
+  background-color: #f3f7f8;
+  
+  background-repeat: repeat;
+}
+.title{
+  float: left;
+  width: 247px;
+  margin: 49px 0 40px 52px;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Cuprum","Arial",sans-serif;
+  color: #EF5C67;
+}
+.data {
+float: left;
+width: 340px;
+}
+.telephone {
+font-size: 17px;
+color:#EF5C67;
+position: relative;
+margin: 46px 50px 4px 22px;
+border: 3px solid white;
+width: 270px;
+font-size: 21px;
+line-height: 18px;
+}
+.address {
+width: 310px;
+margin-left: 31px;
+font-size: 14px;
+line-height: 24px;
+color: #32425C;
+}
+.login, .user-block {
+float: left;
+}
+.login {
+position: relative;
+margin: 47px 10px 0 21px;
+padding: 12px 26px 14px 46px;
+font-family: "Cuprum","Arial",sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 21px;
+line-height: 18px;
+text-decoration: none;
+color: black;
+background-color: white;
+}
+
+.registration {
+float: right;
+padding: 12px 25px 14px 23px;
+margin-top: 47px;
+font-size: 21px;
+line-height: 18px;
+font-weight: 400;
+font-style: normal;
+font-family: "Cuprum","Arial",sans-serif;
+text-decoration: none;
+color: black;
+background-color: white;
+
+}
+.main-navigation {
+float: left;
+width: 100%;
+margin-bottom: 60px;
+
+text-align: center;
+background-color: #32425C;
+border-bottom: 3px solid #293449;
+}
+.block-1 {
+
+margin-bottom: 65px;
+background: white;
+background-position: 0 0;
+  background-repeat: repeat;
+color: black;
+ position:relative; ;
+ top:250px;
+}
+.category-button{
+  color:#ffffff;
+  font-style: "Cuprum";
+  font-size: 14px;
+  text-transform:  uppercase;
+}
+.offers-list li:nth-child(1) div{
+  
+  background-color: #ffbf47;
+   position: relative;
+  
+}
+.offers-list li:nth-child(2) div{
+  
+  background-color: #3bbce3;
+   position: relative;
+    
+}
+.offers-list li:nth-child(3) div{
+  
+  background-color: #dc91d8;
+  position: relative;
+  
+}
+.service-list li:nth-child(2) div{
+  
+  background-color: #8ed78f;
+   position: relative;
+    
+}
+.service-list li:nth-child(3) div{
+  
+  background-color: #ffc047;
+   position: relative;
+    
+}
+.text-main{
+  font-size: 36px;
+  font-family: "Cuprum","Arial",sans-serif;
+  font-style: bold;
+  text-transform: uppercase;
+}
+.text{
+  font-size: 18px;
+}
+
+.block-1 ul{
+  list-style:none;
+
+}
+.block-1 h2{
+  font-size: 24px;
+  font-family: "Cuprum","Arial",sans-serif;
+  
+}
+.block-2 ul{
+  list-style:none;
+
+}
+.block-3 ul{
+  list-style:none;
+
+}
+.block-2{
+  margin-bottom: 65px;
+background: white;
+background-position: 0 0;
+  background-repeat: repeat;
+color: black;
+ position:relative; ;
+ top:200px;
+}
+
+.popular-goods,
+.popular-firms{
+  background-color: #f9f5f0;
+}
+.drill-actions{
+  display: none;
+}
+.modal-add-product{
+   display: none;
+}
+.modal-map{
+  display: none;
+}
+.modal-write-us{
+ display: none; 
+}
+
+.drill{
+  float: left;
+  font-style: bold;
+}
+.drill-description{
+  font-family: inherit;
+ font-style: bold;
+
+}
+.oldprice{ 
+  color:#a9a9a9;
+  text-decoration: line-through;
+}
+.btn{
+  color:#ffffff;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+.block-2 p,
+.block-3 p{
+  color: #5a6476;
+  font-family: "Cuprum","Arial",sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  
+
+}
+.block-3{
+  position: relative;
+  top:350px;
+}
+.block-4{
+   background-color: #f4f8f9;
+  position: relative;
+  top:200px;
+}
+.block-5{
+
+  position: relative;
+  top:200px;
+}
+.footer{
+  position: relative;
+  top:450px;
+}
+
+.footer-up{
+  background-color:#32425c;
+  padding-bottom: 21px;
+  color: white;
+}
+.footer-navigation a{
+  font-size: 18px;
+  color:#ffffff;
+}
+.footer-navigation ul{
+  list-style:none;
+
+}
+.footer-navigation-otherness a{
+ font-size: 18px;
+  color:#ffd180; 
+}
+.footer-navigation-otherness ul{
+  list-style:none;
+
+}
+.left-footer-up, .right-footer-up {
+float: left;
+
+}
+
+.copyright {
+float: left;
+padding: 37px 0 0 2px;
+font-size: 16px;
+
+font-style: normal;
+font-family: "Cuprum","Arial",sans-serif;
+color: white;
+}
+.social ul{
+  list-style:none;
+
+}
+.feedback{
+  font-size: 16px;
+  color: white;
+}
+.mail a{
+  font-size: 16px;
+  color: #ffd180;
+}
+
+
+.footer-down{
+  background-color:#293449;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
