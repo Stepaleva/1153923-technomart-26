@@ -302,7 +302,7 @@ color: black;
 }
 
 .drill{
-  float: left;
+  
   font-style: bold;
 }
 .drill-description{
@@ -330,7 +330,7 @@ color: black;
 }
 .block-3{
   position: relative;
-  top:350px;
+  top:200px;
 }
 .block-4{
    background-color: #f4f8f9;
@@ -341,6 +341,9 @@ color: black;
 
   position: relative;
   top:200px;
+}
+.catalog-list ul{
+list-style:none;
 }
 .footer{
   position: relative;
