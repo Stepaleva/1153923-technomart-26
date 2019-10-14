@@ -4,6 +4,7 @@
 <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -12,22 +13,19 @@
 
      <div class="header-up">
        <div class="logo">
-       <a href="index.html"><img src="img/logo-technomart.svg" width="150" height="40" alt="Логотип Техномарта"></a>
+       <h1><a href="index.html">Техномарт</a></h1>
        </div>
-       <div class="header-up-box">
+       <div class="header-up-box clearfix">
        <div class="search">
-         <form>
-           <img src="img/icon-search.svg" width="19" height="19" alt="поиск">
-           <label for="search"></label>
+         <form> 
            <input type="search" id="search" name="search" placeholder="Поиск:">
+           <label class="search-label" for="search"></label>
          </form>
        </div>
        <div class="bookmarks">
-        <img src="img/icon-bookmark.svg" alt="закладки">
        <a href="#bookmarks">Закладки:0</a>
        </div>
        <div class="basket">
-         <img src="img/icon-cart.svg" width="16" height="16" alt="корзина">
        <a href="#basket">Корзина:0</a>
        </div>
        <div class="ordering">
@@ -35,7 +33,7 @@
        </div>
       </div>
      </div>
-     <div class="container">
+     <div class="container clearfix">
      <div class="header-down">
       <p class="title">
         Интернет-магазин<br>
@@ -44,7 +42,7 @@
       </p>
      <div class="data">
        <div class="telephone">
-         <img src="img/icon-phone.svg" width="20" height="20" alt="телефон">
+         
       <p>+7 (812) 555-05-55</p>
        </div>
        <div class="address">
@@ -54,7 +52,7 @@
 
         <div class="user-block">
         
-        <a class="login" href="#login"><img src="img/icon-login.svg" width="20" height="20" alt="войти">Войти</a>
+        <a class="login" href="#login">Войти</a>
 
         <a class="registration" href="#registration">Регистрация</a>
         </div>
@@ -74,13 +72,15 @@
      </div>
     </header>
     <main>
+      <div class="block-6">
+      <div class="container clearfix">
       <div class="burger-of-pages">
-      <ul>
-        <li><a href="#"><img src="img/icon-home.svg" width="15" height="15" alt="главная"></a></li>
-        <li><a class="marker-1" href="#">Каталог</a></li>
-        <li><a class="marker-2" href="#">Инструмент</a></li>
-        <li><a class="active" href="">Перфораторы</a></li>
-      </ul>
+      
+        <a href="#"></a>
+        <a class="marker-1" href="#">Каталог</a>
+        <a class="marker-2" href="#">Инструмент</a>
+        <a class="active" href="">Перфораторы</a>
+      
       </div>
       <div class="drill-header">
          <h2>Перфораторы</h2>
@@ -146,12 +146,13 @@
             </ul>
           </form>
         </div>
-      <button type="submit" title="кнопка показать товары">Показать</button>
+      <button class="btn-show" type="submit" title="кнопка показать товары">Показать</button>
       </form>
       </section>
+      <div class="container-right">
       <div class="sorting">
         <span>Сортировка:</span>
-        <ul>
+        <ul class="list-of-sorting">
           <li><a href="">По цене</a></li>
           <li><a href="#">По цене</a></li>
           <li><a href="#">По функционалу</a></li>
@@ -324,6 +325,9 @@
           <a class="following" href="#">Следующая</a>
         </div>
       </section>
+      </div>
+      </div>
+      </div>
       <article class="about">
         <h2>Пара слов о перфораторах</h2>
         <p>

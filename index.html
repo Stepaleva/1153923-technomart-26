@@ -13,22 +13,19 @@
 
   	 <div class="header-up">
        <div class="logo">
-  	 	 <a href="index.html"><img src="img/logo-technomart.svg" width="150" height="40" alt="Логотип Техномарта"></a>
+  	 	 <h1><a href="index.html">Техномарт</a></h1>
        </div>
-       <div class="header-up-box">
+       <div class="header-up-box clearfix">
        <div class="search">
-         <form>
-           <img src="img/icon-search.svg" width="19" height="19" alt="поиск">
-           <label for="search"></label>
+         <form> 
            <input type="search" id="search" name="search" placeholder="Поиск:">
+           <label class="search-label" for="search"></label>
          </form>
        </div>
        <div class="bookmarks">
-        <img src="img/icon-bookmark.svg" alt="закладки">
   	 	 <a href="#bookmarks">Закладки:0</a>
        </div>
        <div class="basket">
-         <img src="img/icon-cart.svg" width="16" height="16" alt="корзина">
   	 	 <a href="#basket">Корзина:0</a>
        </div>
        <div class="ordering">
@@ -36,7 +33,7 @@
        </div>
       </div>
   	 </div>
-     <div class="container">
+     <div class="container clearfix">
   	 <div class="header-down">
   	 	<p class="title">
   	 		Интернет-магазин<br>
@@ -45,7 +42,7 @@
   	 	</p>
   	 <div class="data">
   	   <div class="telephone">
-         <img src="img/icon-phone.svg" width="20" height="20" alt="телефон">
+         
   	 	<p>+7 (812) 555-05-55</p>
   	   </div>
   	   <div class="address">
@@ -55,15 +52,14 @@
 
         <div class="user-block">
         
-  	 		<a class="login" href="#login"><img src="img/icon-login.svg" width="20" height="20" alt="войти">Войти</a>
+  	 		<a class="login" href="#login">Войти</a>
 
   	 		<a class="registration" href="#registration">Регистрация</a>
         </div>
   	 </div>
   	 <nav class="main-navigation">
-
-  	    <ul>
-  	 		<li><a href="index.html"> Главная</a></li>
+  	   <ul>
+  	 		<li><a href="index.html">Главная</a></li>
   	 		<li><a href="#">Компания</a></li>
   	 		<li><a href="catalog.html">Каталог</a> </li>
   	 		<li><a href="#">Магазин</a></li>
@@ -76,8 +72,10 @@
   	</header>
   	<main>
   		<h1 class="visually-hidden">Техномарт</h1>
+      <div class="container">
   		<section class="block-1">
-        <div>
+        
+        <div class="offers clearfix">
         <div class="offers-list">
   			<ul>
   				<li>
@@ -115,15 +113,14 @@
   					<h2 class="visually-hidden">Дрели и перфораторы</h2>
             <div class="slider">
 
-            	<div class="buttons">
-            		<div class="left"><a href=""><img src="img/icon-left.svg" width="22" height="42" alt="кнопка влево"></a></div>
-            		<div class="right"><a href=""><img src="img/icon-right.svg" width="22" height="42"  alt="кнопка вправо"></a></div>
-            	</div>
-
-            	<div class="dots">
-            		<div class="dot"><img src="img/slider-dots.svg" width="10" height="10" alt="левая точка"></div>
-            		<div class="dot"><img src="img/slider-dots.svg" width="10" height="10" alt="правая точка"></div>
-            	</div>
+            <input type="radio" id="btn-1" name="toggle" checked="">
+            <input type="radio" id="btn-2" name="toggle">
+            <div class="slider-controls">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+            </div>
+            <label class="arrow-left" for="btn-1"></label>
+            <label class="arrow-right" for="btn-2"></label>
 
             	<div class="slides">
             		<div class="slide">
@@ -161,10 +158,11 @@
   				</li>
   			</ul>
         </div>
+
         </div>
   		</section>
   		<section class="block-2">
-  			<div class="popular-goods">
+  			<div class="popular-goods clearfix">
   			<p>Популярные товары:</p>
   			<a class="btn" href="#">Все популярные товары</a>
   			</div>
@@ -263,8 +261,12 @@
         </div>
 
   		</section>
-  		<section class="block-4">
-  			<span>Сервисы</span>
+      </div>
+      <div class="block-4">
+      <div class="container">
+  		<section class="service clearfix">
+        
+  			<h2>Сервисы</h2>
   			   <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
   			   Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
   			   <div class="service-block">
@@ -297,9 +299,14 @@
   				  </div>
           </div>
         </div>
-  		</section>
+       
+  		</section> 
+      </div>
+      </div>
       <div class="block-5">
-  		<section class="about-company">
+      <div class="container">
+  		<section class="about-company clearfix">
+        <div class="info">
   			<h2>Компания "Техномарт"</h2>
   			<p>
   				Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
@@ -312,14 +319,14 @@
   				<li>ЖелДорЭкспедиция</li>
   			</ul>
   			<a class="btn" href="">Подробнее о компании</a>
-  		</section>
-  		<section class="contacts">
+      </div>
+  		<div class="contacts">
   			<h2>Контакты</h2>
   			<p>Вы можете забрать товар сами, заехав в наш офис:</p>
   			<div>
           <a class="map" href="img/big-map.png"><img src="img/map.jpg" width="320" height="220" alt="г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8"></a>
         </div>
-  			<a href="">Заблудились? Напишите нам!</a>
+  			<a class="btn" href="">Заблудились? Напишите нам!</a>
         <div class="modal-map">
           <button class="modal-content-close-map" type="button" title="закрыть карту"><img src="img/closemap.svg" width="30" height="30" alt="закрыть карту"></button>
           <img src="img/big-map.png" width="320" height="220" alt="г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
@@ -350,7 +357,9 @@
             <button class="btn" type="submit" title="Отправить">Отправить</button>
           </form>
         </div>
+      </div>
   		</section>
+    </div>
     </div>
   	</main>
   	<footer class="main-footer">
