@@ -96,17 +96,22 @@
         </div>
         <div class="filter-of-price">
            <h3>Цена:</h3>
-           <form class="form-range-controls">
              <div class="price-scale">
-                <input type="range" min="0" max="30000" name="price">
+              <div class="scale">
+                  <div class="bar">
+                  </div>
+                </div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
              </div>
              <div class="min-max-price">
                 <input class="price-min" type="text" name="price-min" value="0">
                  <span>-</span>
                 <input class="price-max" type="text" name="price-max" value="30000">
             </div>
-           </form>
+           
         </div>
+        <hr class="line">
         <div class="filter-of-firms">
           <h3>Производители:</h3>
 
@@ -135,9 +140,10 @@
 
 
         </div>
+        <hr class="line">
         <div class="filter-of-battery">
           <h3>Питание:</h3>
-          <form>
+          
             <ul class="list-battery">
               <li>
                 <input type="radio" name="battery" id="battery" checked>
@@ -148,7 +154,7 @@
                 <label for="net">Сетевые</label>
               </li>
             </ul>
-          </form>
+          
         </div>
       <button class="btn-show" type="submit" title="кнопка показать товары">Показать</button>
       </form>
@@ -162,8 +168,8 @@
           <a class="s-1" href="">По цене</a>
           <a class="s-2" href="#">По цене</a>
           <a class="s-3" href="#">По функционалу</a>
-          <a class="s-4" href=""><img src="img/icon-up-dir.svg" width="11" height="10" alt="стрелка вверх"></a>
-          <a class="s-5" href=""><img src="img/icon-down-dir.svg" width="11" height="10" alt="стрелка вниз"></a>
+          <a class="sorting-up sorting-up-active" href=""></a>
+          <a class="sorting-down" href=""></a>
         </div>
       </div>
       <section class="catalog-list">
