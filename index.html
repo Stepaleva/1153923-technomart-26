@@ -12,11 +12,11 @@
   	<header class="main-header">
 
   	 <div class="header-up">
-      <div class="container clearfix">
+      <div class="container">
        <div class="logo">
   	 	 <h1><a href="index.html">Техномарт</a></h1>
        </div>
-       <div class="header-up-box clearfix">
+       <div class="header-up-box">
        <div class="search">
          <form> 
            <input type="search" id="search" name="search" placeholder="Поиск:">
@@ -30,7 +30,7 @@
   	 	 <a href="#basket">Корзина:0</a>
        </div>
        <div class="ordering">
-  	 	 <a href="#ordering">Оформить заказ</a>
+  	 	 <a class="ordering" href="#ordering">Оформить заказ</a>
        </div>
       </div>
       </div>
@@ -197,10 +197,10 @@
   			<ul>
   				<li>
             <div class="drill">
-                <div class="drill-actions">
-                  <a href="#">Купить</a>
-                  <a href="#">В закладки</a>
-                </div>
+              <div class="drill-actions">
+               <a href="#" class="buy">Купить</a>
+               <a href="#" class="in-bookmarks">В закладки</a>
+              </div>
                 <div class="drill-image">
                   <img src="img/bosch9000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
                 </div>
@@ -213,10 +213,10 @@
         </li>
         <li>
           <div class="drill">
-             <div class="drill-actions">
-               <a href="#">Купить</a>
-               <a href="#">В закладки</a>
-             </div>
+            <div class="drill-actions">
+               <a href="#" class="buy">Купить</a>
+               <a href="#" class="in-bookmarks">В закладки</a>
+            </div>
              <div class="drill-image">
               <img src="img/bosch3000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 3000">
              </div>
@@ -229,10 +229,10 @@
       </li>
       <li>
         <div class="drill">
-           <div class="drill-actions">
-             <a href="#">Купить</a>
-             <a href="#">В закладки</a>
-           </div>
+          <div class="drill-actions">
+               <a href="#" class="buy">Купить</a>
+               <a href="#" class="in-bookmarks">В закладки</a>
+          </div>
            <div class="drill-image">
              <img src="img/bosch6000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 6000">
            </div>
@@ -246,8 +246,8 @@
       <li>
         <div class="drill new">
            <div class="drill-actions">
-               <a href="#">Купить</a>
-               <a href="#">В закладки</a>
+               <a href="#" class="buy">Купить</a>
+               <a href="#" class="in-bookmarks">В закладки</a>
           </div>
           <div class="drill-image">
               <img src="img/bosch2000.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 2000">
@@ -368,17 +368,22 @@
         <br>
          заехав в наш офис:</p>
   			<div>
-          <a class="map" href="img/big-map.png"><img src="img/map.jpg" width="300" height="158" alt="г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8"></a>
+          <a class="map js-map" href="img/big-map.png"><img src="img/map.jpg" width="300" height="158" alt="г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8"></a>
         </div>
-  			<a class="btn" href="">Заблудились? Напишите нам!</a>
-        <div class="modal-map">
-          <button class="modal-content-close-map" type="button" title="закрыть карту"><img src="img/closemap.svg" width="30" height="30" alt="закрыть карту"></button>
-          <img src="img/big-map.png" width="320" height="220" alt="г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
-        </div>
-        <div class="modal-write-us">
-          <button class="modal-content-close-lesson" type="button"></button>
+  			<a class="btn js-lesson" href="write-us.html">Заблудились? Напишите нам!</a>
+        <section class="modal modal-map">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <button class="modal-content-close-map" type="button" title="закрыть карту"><span class="visually-hidden">Закрыть</span></button>
+          <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3459.7566625268864!2d30.32184701614505!3d59.93845396106999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1573093482920!5m2!1sru!2sru" width="940" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe></p>
+        </section>
+        <section class="modal modal-write-us">
+          <h2 class="visually-hidden">Написать нам</h2>
+          <button class="modal-content-close-lesson" type="button">
+          <span class="visually-hidden">Закрыть</span>
+          </button>
           <form class="write-us-form">
             <div class="form-answer">
+              <div class="data-form">
               <p>
                <label >
                <span>Ваше имя:</span><br>
@@ -393,18 +398,22 @@
               </label>
 
             </p>
+            </div>
             <p>
               <span> Текст письма:</span><br>
               <textarea name="textletter" rows="5" placeholder="В свободной форме"></textarea>
             </p>
             </div>
+            <div class="form-btn">
             <button class="btn" type="submit" title="Отправить">Отправить</button>
+            </div>
           </form>
-        </div>
+        </section>
       </div>
   		</section>
     </div>
     </div>
+    <div class="overlay"></div>
   	</main>
   	<footer class="main-footer">
 
@@ -477,6 +486,7 @@
      </div>
   	</div>
   	</footer>
-
+  <script src="js/write-us.js"></script>
+  <script src="js/modal-map.js"></script>
   </body>
 </html>
